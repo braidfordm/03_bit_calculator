@@ -91,16 +91,20 @@ keep_going = ""
 while keep_going == "":
 
     # Ask user for the file type 
-    data_type = user_choice()
+    data_type = user_choice() 
     print("You chose", data_type)
     
     # For integers, ask for integer
     if data_type =="integer":
         var_integer = num_check("Enter an integer: ", 0)
 
+    # For images, ask for width and height 
     # (must be an integer more than/ equal to 0)
     elif data_type == "image":
         image_width = num_check("image width? ", 1)
         print()
         image_height = num_check("image_height? ", 1)
-    #For images, ask for width and height 
+
+        # For text, ask for a string 
+    else:
+        var_text = input("Enter some text: ")
