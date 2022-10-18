@@ -17,3 +17,6 @@ def text_bits():
     print()
 
     return ""
+
+# Main routine goes here
+text_bits() 
